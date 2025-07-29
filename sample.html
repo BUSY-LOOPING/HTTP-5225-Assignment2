@@ -1,0 +1,362 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#121416]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">HumberStore</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#121416] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#121416] text-sm font-medium leading-normal" href="#">Shop</a>
+              <a class="text-[#121416] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#121416] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#6a7581] flex border-none bg-[#f1f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121416] focus:outline-0 focus:ring-0 border-none bg-[#f1f2f4] focus:border-none h-full placeholder:text-[#6a7581] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign In</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f1f2f4] text-[#121416] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#121416]" data-icon="Heart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f1f2f4] text-[#121416] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#121416]" data-icon="ShoppingBag" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:px-4 @[480px]:py-3">
+                <div
+                  class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-xl min-h-80"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNAG8guRdkfLRNRWg1d-8S2OMY0j-0tb8Fb2ts7_zj04sHh2rMn1L2Xuk7MisWk7Jjx_6_RY68FoeGmBrNBTgacxnxUHGFpGqF3KOUT9Xkn0NA6p2HUw9yfZ1va-dSEamN1O-3xehkKOw1seEVl62p4uhk_J__XPg8gwxfwlonQx5MmokOIGF8uojIGxDExWAWyeg6UxXuYlF-WMhIiufEfmPI8dTNWLlObEa8sp_4Kp6tLWcEMqRiD6J3OBFMR3UjLi-cLVcfzWkF");'
+                >
+                  <div class="flex justify-center gap-2 p-5">
+                    <div class="size-1.5 rounded-full bg-white"></div>
+                    <div class="size-1.5 rounded-full bg-white opacity-50"></div>
+                    <div class="size-1.5 rounded-full bg-white opacity-50"></div>
+                    <div class="size-1.5 rounded-full bg-white opacity-50"></div>
+                    <div class="size-1.5 rounded-full bg-white opacity-50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Arrivals</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCueND4TZEhoacSLFeIjr9zgR35nSvg4eBfJHdx9R7IljDLkMj9ONT9TpmRmjr3i0OxV4wMp8IslL-cb0-AdsrSUMZIfIIfT8Z37BTtwuIOX7ziAgXOTDSIsE-7Hr1dg8LpAwRhuwgCx1VBIo3XjkXoQ-VjZWUNd218B0csdpPIqAcvEdD68rIVQFwix51TXFeNQIUajpygOKYYGrFtMby2kpgYDYRluV18r5HgVBObO06qPMZb03eWNTdnp7wWpU1f_NavgZafY1ol");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Stylish Summer Collection</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Explore the latest trends for the season</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8_66dXiSKAxOOML44achUNhoON-FGky-nX-1bTWZKAFlGXfsO899Owg8u6dfPLpZuh3EncJsN2kHq_3jePDJPuv-HxxboSoOeseEt6yPDemdcU9D1NOSjE6XXPxG_kQK8nOZfH9ciC5SsoLq0uFHmYhwYsf0thTi2APg3jBad53-G1GTNJ6kj_tuov9ISOtiuIb3a60iafcvU_lQD7fSkq13X5a7m7rngEPHL6eX3fmYis6YUsFqUehsgu4gEgbr4OMq9H0WqLC77");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Latest Tech Gadgets</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Discover cutting-edge technology</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwkpi2Ega_Xk9mrYJ2ckV8CNB-1AaYs80uJV5jenZa5GWFV_8I0irJ8uacuswFPVVinexh8Oo4jrLbWPjXQRzvbZIH35MaQbwrE_4eS9RsAEmMYeCRsE4hDUm6odw3WgAVRShYCNyUa8RqYqr2uqsTUlXG5U_COMmj-dpUAn4OYdNGMVZWPOl3QkJCoYZyK31G0cR2sT5WJIDUV4w0kUBt2tgIlMOb7EYEjnJ-cbzOLy6aik6ZzuXOsKP5RpSoQ4mIPvyUyNPi6a5D");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Home Decor Essentials</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Transform your living space</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Best Sellers</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvE2eqzwK5S1C3KdtLhFMTaovnD_etyHFq6z5lpogFICw6O6UOPbknLWmCreJPoL_FMI-uCiMatC6qFQGB1feEgX4CvN0tnVOzWh2AsuBs--zYRvVR5LT02XR_vyNps-Av863SgvH7_KDYNnEzS2KG9fbM9_d5FwXb1c4-KL76i9PoHhF4y46ssoWjJ_Nhj3jwxsIHDTrtx1AltFJf9QM8AgEj9nR4jSToBjDJTFMoapQ9naqDhyYTsmsPtYcANrivYlb4D-Td080v");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Top-Rated Fashion Items</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Customer favorites in fashion</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAz4TXbIn3_PXDm26GTuw6OKSN2hYsOO0oooqS6tteEcjsV_dEI3bmoEnF6ZMOJf8t6kB9O9GSjlNwqqlCn44qeUdN5NFXZ0O1zV7oEdyk_ZDeOa4WAvgoXUqEBogDysm0rLZLKGbUG4ChSPwyhb6E6g17SIyWsUFWsz9GCkEe_xudaN1uLvJGftBR4Z9C4Kap2ZuwtFQgKUEC7JMy46mwntFRf8qBcyyTOegXzlfEFp8r-cW4vr94xBuAkc4g0pqF1udlqpG4Gg1tS");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Most Popular Electronics</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Highly-rated tech products</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6FLwAsPcNo-OEbf375jLlzdvpNkcc1GO4m_7jKSweH-j-UJzEwIz684JqCHROvlBl7hzi7cHicr-ekkTDnMZMuP4SIQg_EqxU1VC7gGTvrOwty2MVOEu9oKVao3zjopY33cOZnmat7A7SBk0fshOOZ8poGIWvUNOFbpKCOz6ZRjMjFFg-8onunIruBuRHux0mBMWr2GzlLhfY2-dtGwqQEcLSxBUnYFgJxNJXKMMMXQUcNersq904XLNe7Pl-MzrVR3QfHmoF_v28");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Best-Selling Home Goods</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Top picks for home improvement</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Deals of the Day</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2IdgAhtngI4TY0z0oBmr23AjPZboVdM3l8R10T1R7bVPa_sKGpabMZTp4fhYN0bXb6an_Qngkw2dLc9U7jXwDXUFP8vwmEM3Sg-NyGhFblur0c1bhPkhza1s3CC2cwniXhZEB6mwA8yuo_ul3Kdee6_UEbiDRbU-2c_tvcCqwqm_KNJIFh4QOhSmkK7Myvwi3BpFSH3-c5SBRaEo1LsiguXhGvSOSKp7ZXPr7EIDCzskd-HBoQA1pZytdbJJv9pZBX_vxGe4H7v2O");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Limited-Time Fashion Deals</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Unbeatable prices on fashion items</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMT1qJhZDxvzKXX3I4YbMJAvq8TK6REW4tSnIoqERec47XOJfyKK4pcKmgEQyctfON_ldA4e5NzpEOVaCHCSRxa7dzX6T7NCukhie3lT6UkF9p2oSuuj8CS_hx1ir4FYhLKhuK0noZPvcBbKAdqRXL0wC7yLYhIofXf6Vofrx-097a-7ZJjdapOKfG9y7tJAM5AFGWSsxK4WIYxVeLrBXz4dsEf5YNuyUwk5_2kduF7CAWFild70GhMo5Q3xr_--wwq1HErykjRIwm");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Today's Top Tech Discounts</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Save big on the latest electronics</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDe6v_NlB6dVKqExnl6SppJWWivRdtmOq7Rvvr6Gut8BvLfw2YXxblNleZqNMqeXFFJIHsLA5uwOPFtZFac6Lc3Wf8VTbFy93y0Z43NgwDZlkGrRWlf3m1PAvaT1LPd0Esqr_sLY1VI21Z6YmlpSNgRMBN8cla6_5d6xYxTHYr4Q7lcBNPj1IGd94MDoGDU9aV0tOkGfm_nszqcbZBxG-M3JsGo7KbzNe87Tj8MhhzijkOhr69P1yxG9MOpI2GL92tX-SPjozx9GzDO");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Exclusive Home Offers</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Special deals for your home</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Customer Favorites</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0g46ZyeP47SlPZv0obMeS3iSYt16LQQDrC_n1BvScULEwo_4uncecRxtbBHOOyAYSzaNFDR1gMGipr8SgvoJEfjo2xSvGRm9N5Bwj19cCSFlK2vWdP55xG2Hj-KDANUrSMqc3PX_e959F-jgrQkDmj-RQqaCXB-8-i-BC9HkUe3HB5mVzmN3hSvMs2P6nOvfGKo1Hbbpi36V-rIy3CNf7mUDf3jWOjrQIiz-IWod8f2TvEJwHGld_avS2KqIQ8V4pl5YxTrP0q9I8");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Most Loved Fashion Picks</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Fashion items customers adore</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAK_BKwJ8eRIFRB-9KZvK7qtRclFUjJigzTQUUM5HhTFCaRR-cuSNnOVFxykYfrI6Wm6jp-wdtzYBMqUEvREq97b1i-pE4p7b713XaLSh4_etMxRptIet4PExHYhoSesCAbHr87y-tYGjtNFEgGyltpKVPwdzW9ripg6r93ASRWg3kqY7Aq_CItU102v_NLvmq0tk7DZRpHG8jPfCgbRDI9gwUVs7vawjRKfFnyYoY1injVC9SfHoOGU8z2NYqa_ACNG_M7dDQigQ2");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Customer's Choice Electronics</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Top-rated electronics by users</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg4N0__Nw8dRtiFDshz_2K46h3FRY4uBGpomf_mRMMfsLqtW5p4hvVxpzUwAIxHRTL1W1zslUujRdbW-r1UoJvTFWWaLnYxzU3oo3Ki7cpViKKK6mgrp11hhyObud8BDHb6oRlZ9DtSkhy8TyygPvR7Awbru32Igsxq28K_rceF7q6_exfJNFNzvLzkK0xvfPnMiE4tZXGSo_8hq8n66JPL8LOTw-x1l_zdx5A1XUu-WL-Kx3-bbGXnoDYTliJmtru_8jmWP6Y6ZCg");'
+                  ></div>
+                  <div>
+                    <p class="text-[#121416] text-base font-medium leading-normal">Favorite Home Decor Items</p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Home decor items everyone loves</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Items</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyisyewN39AX0bfZ8DjjHIusmgCfgUiA96gIjySODqfktJdvtsgAPzdb1h11z_guo4kV7BWSVbcfAcXXRRzn8W79J3rsV014qhhqtOw6_pe9ilZKC-EqoTfNbN_7YegkvGOlh04gNujK5Te49b3t9tL1OpTzIwbP0I6wJn1qt7QxlC2Zsk2sa3bv0Q_GBAtisDW8fjWL4dSRs3elKE_10nTozk9OSEByVpPHFwaDPxcnWEccPfe1h6WTB0ASxkudvoCV1JmiiT13ha");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Premium Leather Handbag</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Luxurious and durable handbag</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAopOtv6ajVmI_QYG7Nkm8TIE9EZ211mzg88wutdSrP-8gzD_gFRPKgUCHnWOBoPVhhrvSsits9SPD-KkZF4GAb2c1-ccGAFQu06e59x6_pVrnSY0A7uL-NmBYvdmrhn85G4-rMcl8Dx8XzQezPhIpZb31qgIDvSmDyExLIVlO0dsS_7qJSMKkQ_Wbbnfww007e6wlare0-ZKcG1621ZbnJjfZ2gVWUYMxyr94kVmCrjE47p7C4ZzTqYwWsmBKa3ezrcoaePb9Vhk-e");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Wireless Noise-Canceling Headphones</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Immersive audio experience</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7NQLPGGAXv6viGI6BSc-1lVRHdpQcRI6mBwD3UlfaF7q_EkzBh5R1Y-1tHrO5hvXBY136y4ut-mOTk6ieCnMsFggh5lR-oEOtxIZFjUgfdNb4UZJRDwZ500S17hRtPbbMMzGrKaKbaAa4bss9NQycZCCrJozLebTxaWeI-BhQDLVcDV_7l4B7bHP2396opQ9rclcR5SFskGkHeUuCuFWGXUNVjgVMrFPWJhYqIYieXyZ0rDsD4LVn0Tav6mVrFQ0u90Vko8hbtecc");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Modern Minimalist Desk Lamp</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Sleek design for your workspace</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATSgNrAOqIfiZMWTBXKB-9LzM4Wx89ObI1xNTfn5uUmpkP55f7a2m-DPzhT5tNQ1jNVVeVn6xkP-_NQxtDoCAuD4RLa11Tlv1DgrJ7fylL6ssg16fCi5epKAYTVaDzOci7EPey29YtzdFdfNBAANqClbHS-Z9HdPF2X74QMRmKmHkzsBhgy9Wb4GbtkvLhw8f38ixGIHzmd4hiMjgBxjQyCXNeHmnXLgyQ3utNBrPVjcObBZv-C8YOLuJsdfMX-1YmeEcyotx-bjz6");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Organic Cotton Bedding Set</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Soft and eco-friendly bedding</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGZ1hpqs_VBb1itU2ortStwEvIIpFYINx1u7B0UG2IrnI_wQpx7PX2ygWmyC___cFHAHOiqnxTWgwknQKqAlpWwQuGFO3qFfikMTqXpf8p-Rc8Xm1_rvV63WJxTH6xFheuvAVgsY84PAtjjVG0PJUsQJljt4il4fyJkhp1A5d94sVJ91Dg97Bahym-xUewS6Daqbt2gb7yYZlK0vngM_cicuhXE2_R7gfzHB8lRJgEySYmHpd-X90gGmaP5tm-Mld1qVNRJrHJfl5l");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Smart Fitness Tracker Watch</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Track your health and activity</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9c2PPc87dsUfQ59LA98yKXTBK8w7Oro6LNYeY8woUJinw6Ny1afSXLxyvKlKjqgx09PpnglpCdBJ5ZLWj30_8wZEnNi1X70X_Oy82_KTMdJ9ESxkj29phawZFjj1L8nsv3ORcfeTSrP70PXXXIP35PTnt77saMyar6b71iLH8IH_FeohWASJwDONEIAikYuD0A4MsvwtPojB8OFf9eqcCD25QB7SW67Rqj4URnYXmWPeuSgfNWxIDvI6C1PvQbdHuE4JNC1It55Pl");'
+                ></div>
+                <div>
+                  <p class="text-[#121416] text-base font-medium leading-normal">Artisan Crafted Coffee Mugs</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">Unique and stylish mugs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#6a7581]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#6a7581]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#6a7581]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#6a7581] text-base font-normal leading-normal">@2024 HumberStore. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
