@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('../includes/connect.php');
 include('../auth/session.php');
 include('../categories/functions.php');
 include('../suppliers/functions.php');

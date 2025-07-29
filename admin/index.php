@@ -1,21 +1,43 @@
 <?php
-include "connect.php";
+include "includes/connect.php";
 session_start();
+
 if (isset($_SESSION['user_id'])) {
-    echo "<a href='products/index.php'>Products</a> | <a href='categories/index.php'>Categories</a> | <a href='suppliers/index.php'>Suppliers</a> | <a href='orders/index.php'>Orders</a> | <a href='auth/logout.php'>Logout</a>";
+    header("Location: dashboard.php");
     exit;
 }
+
 if ($_POST) {
     $email = $_POST['email'];
     $password = md5($_POST['password']);
+
     $q = mysqli_query($connect, "SELECT id FROM users WHERE email='$email' AND password='$password'");
     if ($row = mysqli_fetch_assoc($q)) {
         $_SESSION['user_id'] = $row['id'];
-        header("Location: products/index.php");
+        header("Location: dashboard.php");
         exit;
+    } else {
+        $error = "Invalid login credentials.";
     }
 }
 ?>
-<form method="post">
-    <input name="email" placeholder="Email"><input type="password" name="password"><button>Login</button>
-</form>
+
+<?php include('includes/header.php'); ?>
+
+<div class="container mt-5" style="max-width: 500px;">
+  <h2 class="mb-3">Admin Login</h2>
+  <?php if (!empty($error)) echo "<div class='alert alert-danger'>$error</div>"; ?>
+  <form method="post">
+    <div class="mb-3">
+      <label>Email</label>
+      <input name="email" class="form-control" placeholder="Email" required>
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input type="password" name="password" class="form-control" required>
+    </div>
+    <button class="btn btn-primary">Login</button>
+  </form>
+</div>
+
+<?php include('includes/footer.php'); ?>
