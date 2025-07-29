@@ -1,7 +1,9 @@
 <?php
-include "connect.php"; session_start();
+include "connect.php";
+session_start();
 if (isset($_SESSION['user_id'])) {
-    echo "<a href='products.php'>Products</a> | <a href='categories.php'>Categories</a> | <a href='suppliers.php'>Suppliers</a> | <a href='orders.php'>Orders</a> | <a href='logout.php'>Logout</a>"; exit;
+    echo "<a href='products/index.php'>Products</a> | <a href='categories/index.php'>Categories</a> | <a href='suppliers/index.php'>Suppliers</a> | <a href='orders/index.php'>Orders</a> | <a href='auth/logout.php'>Logout</a>";
+    exit;
 }
 if ($_POST) {
     $email = $_POST['email'];
@@ -9,7 +11,8 @@ if ($_POST) {
     $q = mysqli_query($connect, "SELECT id FROM users WHERE email='$email' AND password='$password'");
     if ($row = mysqli_fetch_assoc($q)) {
         $_SESSION['user_id'] = $row['id'];
-        header("Location: products.php"); exit;
+        header("Location: products/index.php");
+        exit;
     }
 }
 ?>
