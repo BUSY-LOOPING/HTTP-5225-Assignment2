@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('../includes/connect.php');
 include('../auth/session.php');
 include('functions.php');
 if ($_POST) {
