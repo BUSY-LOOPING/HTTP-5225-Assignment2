@@ -29,22 +29,24 @@ CREATE TABLE products (
   category_id INT UNSIGNED,
   supplier_id INT UNSIGNED,
   stock INT,
+  image VARCHAR(255),
   FOREIGN KEY (category_id) REFERENCES categories(id),
   FOREIGN KEY (supplier_id) REFERENCES suppliers(id)
 );
 INSERT INTO products VALUES
-  (1, 'Cool Tee', '100% cotton.', 20.00, 1, 1, 50),
-  (2, 'Smiley Sticker', 'Vinyl sticker.', 2.50, 3, 2, 100);
+  (1, 'Cool Tee', '100% cotton.', 20.00, 1, 1, 50, 'default.jpg'),
+  (2, 'Smiley Sticker', 'Vinyl sticker.', 2.50, 3, 2, 100, 'default.jpg');
 
 CREATE TABLE customers (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100),
   email VARCHAR(100),
+  password VARCHAR(255),
   address VARCHAR(200)
 );
 INSERT INTO customers VALUES
-  (1, 'Jane Doe', 'jane@buyer.com', '101 Main St'),
-  (2, 'John Smith', 'john@buyer.com', '202 Side Ave');
+  (1, 'Jane Doe', 'jane@buyer.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '101 Main St'),
+  (2, 'John Smith', 'john@buyer.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '202 Side Ave');
 
 CREATE TABLE orders (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
