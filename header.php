@@ -15,7 +15,7 @@
       <div class="layout-container flex h-full grow flex-col">
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
           <div class="flex items-center gap-8">
-            <div class="flex items-center gap-4 text-[#121416]">
+            <a class="flex items-center gap-4 text-[#121416]" href="index.php">
               <div class="size-4">
                 <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -27,7 +27,7 @@
                 </svg>
               </div>
               <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">HumberStore</h2>
-            </div>
+            </a>
             <div class="flex items-center gap-9">
               <a class="text-[#121416] text-sm font-medium leading-normal" href="#">Home</a>
               <a class="text-[#121416] text-sm font-medium leading-normal" href="#">Shop</a>
@@ -61,7 +61,13 @@
               <button
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em]"
               >
-                <span class="truncate">Sign In</span>
+                <span class="truncate">
+                  <?php if (isset($_SESSION['user_id'])): ?>
+                    <a href="logout.php">Logout</a>
+                  <?php else: ?>
+                    <a href="login.php">Sign In</a>
+                  <?php endif; ?>
+                </span>
               </button>
               <button
                 class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f1f2f4] text-[#121416] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"

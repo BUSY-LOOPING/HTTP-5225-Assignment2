@@ -79,7 +79,7 @@ $suppliers = get_suppliers($connect);
             <?php while ($row = mysqli_fetch_assoc($products)): ?>
               <tr>
                 <td><?php echo $row['id']; ?></td>
-                <td><img src="<?php echo !empty($row['image']) ? $row['image'] : 'default.jpg'; ?>" alt="<?php echo $row['name']; ?>" class="img-fluid" style="max-width: 100px;"></td>
+                <td><img src="../../<?php echo !empty($row['image']) ? $row['image'] : 'media/default.jpg'; ?>" alt="<?php echo $row['name']; ?>" class="img-fluid" style="max-width: 100px;"></td>
                 <td><?php echo $row['name']; ?></td>
                 <td><?php echo $row['price']; ?></td>
                 <td><?php echo $row['stock']; ?></td>

@@ -72,4 +72,4 @@ INSERT INTO order_items VALUES (1, 1, 1, 1, 20.00), (2, 1, 2, 1, 2.50);
 ALTER TABLE products ADD COLUMN image VARCHAR(255);
 
 -- Update Products with default image
-UPDATE products SET image = 'default.jpg' WHERE image IS NULL;
+UPDATE products SET image = 'media/default.jpg' WHERE image IS NULL;

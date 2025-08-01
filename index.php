@@ -1,3 +1,15 @@
+<?php
+session_start();
+?>
+<?php
+include("connect.php");
+include("session.php");
+include("admin/products/functions.php");
+
+
+$products = get_products($connect);
+?>
+
 <?php include "header.php"; ?>
 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
     <div class="@container">
@@ -15,37 +27,26 @@
         </div>
     </div>
     <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Arrivals</h2>
+
     <div
         class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
         <div class="flex items-stretch p-4 gap-3">
+            <?php while ($product = mysqli_fetch_assoc($products)): ?>
             <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCueND4TZEhoacSLFeIjr9zgR35nSvg4eBfJHdx9R7IljDLkMj9ONT9TpmRmjr3i0OxV4wMp8IslL-cb0-AdsrSUMZIfIIfT8Z37BTtwuIOX7ziAgXOTDSIsE-7Hr1dg8LpAwRhuwgCx1VBIo3XjkXoQ-VjZWUNd218B0csdpPIqAcvEdD68rIVQFwix51TXFeNQIUajpygOKYYGrFtMby2kpgYDYRluV18r5HgVBObO06qPMZb03eWNTdnp7wWpU1f_NavgZafY1ol");'>
+                    style='background-image: url("<?php echo $product['image']; ?>");'>
                 </div>
                 <div>
-                    <p class="text-[#121416] text-base font-medium leading-normal">Stylish Summer Collection</p>
-                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Explore the latest trends for the
-                        season</p>
+                    <p class="text-[#121416] text-base font-medium leading-normal"><?php echo $product['name']; ?></p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                        <?php echo number_format($product['price'], 2); ?>
+                    </p>
+                    <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                        <?php echo $product['stock']; ?> in stock
+                    </p>
                 </div>
             </div>
-            <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8_66dXiSKAxOOML44achUNhoON-FGky-nX-1bTWZKAFlGXfsO899Owg8u6dfPLpZuh3EncJsN2kHq_3jePDJPuv-HxxboSoOeseEt6yPDemdcU9D1NOSjE6XXPxG_kQK8nOZfH9ciC5SsoLq0uFHmYhwYsf0thTi2APg3jBad53-G1GTNJ6kj_tuov9ISOtiuIb3a60iafcvU_lQD7fSkq13X5a7m7rngEPHL6eX3fmYis6YUsFqUehsgu4gEgbr4OMq9H0WqLC77");'>
-                </div>
-                <div>
-                    <p class="text-[#121416] text-base font-medium leading-normal">Latest Tech Gadgets</p>
-                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Discover cutting-edge technology</p>
-                </div>
-            </div>
-            <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwkpi2Ega_Xk9mrYJ2ckV8CNB-1AaYs80uJV5jenZa5GWFV_8I0irJ8uacuswFPVVinexh8Oo4jrLbWPjXQRzvbZIH35MaQbwrE_4eS9RsAEmMYeCRsE4hDUm6odw3WgAVRShYCNyUa8RqYqr2uqsTUlXG5U_COMmj-dpUAn4OYdNGMVZWPOl3QkJCoYZyK31G0cR2sT5WJIDUV4w0kUBt2tgIlMOb7EYEjnJ-cbzOLy6aik6ZzuXOsKP5RpSoQ4mIPvyUyNPi6a5D");'>
-                </div>
-                <div>
-                    <p class="text-[#121416] text-base font-medium leading-normal">Home Decor Essentials</p>
-                    <p class="text-[#6a7581] text-sm font-normal leading-normal">Transform your living space</p>
-                </div>
-            </div>
+            <?php endwhile; ?>
         </div>
     </div>
     <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Best Sellers</h2>
