@@ -30,4 +30,3 @@ if (!$connect) {
 mysqli_set_charset($connect, 'UTF8');
 ?>
 
-<!-- this should be set as per student's requirement -->
